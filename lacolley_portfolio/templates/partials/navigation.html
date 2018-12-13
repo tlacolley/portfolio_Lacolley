@@ -1,0 +1,31 @@
+{% load static cms_tags menu_tags cache admin_urls %}
+
+
+{% for child in children %}
+
+<li class="nav-item active">
+    <a class="nav-link" href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">
+      <span class="nav-link-label">{{ child.get_menu_title }}</span>
+      {% if child.get_menu_title == "Home" %} 
+      <i class="far fa-image nav-link-icon"></i>
+      {% elif child.get_menu_title == "Compétences" %}
+      <i class="fas fa-clipboard-list nav-link-icon"></i>
+      {% elif child.get_menu_title == "A propos" %}
+      <i class="far fa-user nav-link-icon"></i>
+      {% elif child.get_menu_title == "Contact" %}
+      <i class="fas fa-phone nav-link-icon"></i>
+      {% else %}
+      <i class="far fa-image nav-link-icon"></i>
+      
+      {% endif %}
+      <!-- <span class="sr-only">(current)</span> -->
+    {% if child.children %}
+            <ul class="sub_menu">
+                {% show_menu from_level to_level extra_inactive extra_active template '' '' child %}
+            </ul>
+        {% endif %}</a>
+  </li>
+
+
+
+{% endfor %}

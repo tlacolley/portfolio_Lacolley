@@ -1,0 +1,195 @@
+
+
+header{
+    background-color: #030C2D;
+
+    h1{
+      color: $primaryTextColor;
+      position: absolute;
+      font-size: 4rem;
+      top: 5%;
+      left: 3%;
+    }
+    .leitmotiv{
+      position: absolute;
+      font-size: 2rem;
+      
+      top: 12%;
+      color: white;
+      left: 3%;
+    }
+    img{
+      width:100%;
+      height:100%;
+    }
+    #titleNav{
+      margin-right: 2%;
+    }
+    h2{
+
+      a:hover{
+
+      // text-decoration:none;
+      // text-shadow:  0px 0px 10px rgba(0,214,252,1);
+      // color:white;
+      }
+
+    }
+
+    //  Class for animation Navbar
+    .navbarBase{
+      height:5rem;
+    }
+    .navbarTop{
+      animation: navBarTopAnimate 2s forwards;
+    }
+    .navbarLeft{
+      height:5rem;
+      animation: navBarLeftAnimate 2s 0.5s forwards;
+    }
+    // Class for animation List
+    .ulLeft{
+      flex-direction: column!important;
+      justify-content: space-around;
+      height:100%;
+      width:100%;
+    }
+    .ulTop{
+      flex-direction: row;
+       justify-content: end;
+    }
+    .opacityOff{
+      animation: hideList,0.5s forwards;
+    }
+    .opacityOn{
+      animation: showList,0.5s forwards;
+    }
+    .nav-link-icon{
+      display:none;
+      font-size:4rem;
+    }
+    .nav-link-icon:hover{
+      color:blue;
+    }
+    .iconlistAnim{
+      animation:iconDisplay 1s forwards;
+    }
+
+
+    //  Css base Navbar 
+    nav{
+      display:flex;
+      justify-content: space-around;
+      padding:$padding;
+      background-color: $secondaryColor;
+      color:$primaryTextColor;
+      a{
+        color:$primaryTextColor;
+      }
+      a:hover{
+        text-decoration: none;
+        color:$primaryTextColor;
+
+        text-shadow:  0px 0px 10px rgba(0,214,252,1);
+
+      }
+      h2,ul{
+        text-align: center;
+        margin: 2% 0;
+      }
+
+
+      // List base 
+      ul{
+        background-color: $secondaryColor;
+        list-style: none;
+        display: flex;
+        justify-content: end;
+        padding: 0;
+        padding-right: 10%;
+        width: 50%;
+        li{
+          text-transform: uppercase;
+          font-size: 80%;
+          font-weight: bolder;
+
+        }
+      }
+ 
+
+    }
+}
+
+
+
+
+  
+
+@media screen and (max-width:990px) {
+header {
+  #titleNav{
+    margin: 1% ;
+  }
+  #btnBurgerNav{
+      background-color: $primaryColor;
+    span{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-weight: bold;
+    }
+  }
+  .fixedNavbar{
+   animation: mobileNavTopAmin 1s forwards;
+  }
+  .navbar{
+
+    .navShowTel{
+      display: flex;
+      position: fixed;
+      top: 25%;
+      left: 0px;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 80%;
+      width: auto;
+    }
+  }
+  .navbar{
+      background: $secondaryColor;
+      padding:0;
+      display: flex;
+      justify-content: space-around;
+      ul{
+        margin: 0;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        padding:0;
+         li{
+          font-size: 100%;
+        }
+      }
+   }
+  }
+  .btnFixed{
+    position: fixed;
+    font-size: 3rem;
+    top: 3%;
+    left: 3%;
+  }
+}
+@media screen and (max-width:500px) {
+header {
+  .navbar{
+      ul{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        li{
+          font-size: 80%;
+        }
+    
+      }
+   }
+  }
+}

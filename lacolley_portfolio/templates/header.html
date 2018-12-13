@@ -1,0 +1,50 @@
+
+{% load static cms_tags menu_tags sekizai_tags %}
+
+<header>
+   <h1 id="titleSite">Lacolley - Portfolio</h1> 
+   <p class="leitmotiv">VFX Compositor / Web Developper</p>
+     
+  <!--  <canvas id="renderCanvas" width="800" height="600">
+   </canvas> -->
+   {% placeholder "Background Header" %}
+<div id="containerNav">
+  <nav class="navbar navbar-expand-lg navbarBase" id="navbar">
+    <h2 id="titleNav" class=""><a href="#">Lacolley Thomas</a></h2>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#listNav" aria-controls="listNav" aria-expanded="false" aria-label="Toggle navigation" id="btnBurgerNav">
+      <span class="navbar-toggler-icon">+</span>
+    </button>
+      <ul class="collapse navbar-collapse" id="listNav">
+       <!--  <li class="nav-item active">
+          <a class="nav-link" href="#">
+            <span class="nav-link-label">Portfolio</span>
+            <i class="far fa-images nav-link-icon"></i>
+            <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="#">
+            <span class="nav-link-label">Compétences</span>
+            <i class="fas fa-clipboard-list nav-link-icon"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="nav-link-label">À propos</span>
+            <i class="far fa-user nav-link-icon"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <span class="nav-link-label">Contact</span>
+            <i class="fas fa-phone nav-link-icon"></i>
+          </a>
+        </li> -->
+
+        {% show_menu 0 100 100 100 "partials/navigation.html" %}
+      </ul>
+   
+  </nav>
+</div>
+
+
+</header>

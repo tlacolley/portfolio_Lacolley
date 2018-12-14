@@ -4,13 +4,13 @@
 {% for child in children %}
 
 <li class="nav-item active">
-    <a class="nav-link" href="{{ child.attr.redirect_url|default:child.get_absolute_url }}">
+    <a class="nav-link" href="#{{ child.attr.reverse_id }}">
       <span class="nav-link-label">{{ child.get_menu_title }}</span>
       {% if child.get_menu_title == "Home" %} 
       <i class="far fa-image nav-link-icon"></i>
-      {% elif child.get_menu_title == "About" %}
+      {% elif child.get_menu_title == "Portfolio" %}
       <i class="fas fa-clipboard-list nav-link-icon"></i>
-      {% elif child.get_menu_title == "A propos" %}
+      {% elif child.get_menu_title == "About" %}
       <i class="far fa-user nav-link-icon"></i>
       {% elif child.get_menu_title == "Contact" %}
       <i class="fas fa-phone nav-link-icon"></i>

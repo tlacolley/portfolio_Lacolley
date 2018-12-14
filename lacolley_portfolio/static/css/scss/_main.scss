@@ -1,18 +1,33 @@
+#main{
+  padding-top:5%;
+}
 .mainSection{
   width:80%;
   height:100%;
   margin: auto;
   margin-right:auto;
-
-
-
 }
-
 .mainSectionLeft{
     width: 80%;
     height:100%;
     margin-left: auto;
     margin-right: 5%;
+}
+
+.homeSec,.aboutSec,.contactSec{
+  text-align: center;
+  width:100%;
+  height: 100%;
+  
+h2{
+    color: white;
+    font-size: 4rem;
+    text-align:center;
+    padding-top: 2%;
+    margin-bottom: 5%;
+}
+
 
 }
+
 

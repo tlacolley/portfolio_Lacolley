@@ -1,0 +1,52 @@
+
+.aboutSec{
+
+  padding:   2% 5% ;
+  color: white;
+  .about-description, .about-cv{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:1rem;
+    text-align: center;
+    h4{
+      grid-column:1/5;
+    }
+    .about-presentation{
+      grid-column:1/2;
+
+      img{
+        // width: 80%;
+        // margin-right: auto;
+      }
+      .list-contact{
+        padding:0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+      }
+    }
+    .description{
+      grid-column:2/5;
+      padding: 2%;
+
+      // width: 55%;
+    }
+  }
+.about-cv{
+  .list-cv-vfx{
+    grid-column:1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .list-cv-web{
+    grid-column:3/5;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+
+}

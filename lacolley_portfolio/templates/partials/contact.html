@@ -1,11 +1,5 @@
-{% extends "base.html" %}
 {% load cms_tags %}
 
-{% block title %}{% page_attribute "page_title" %}{% endblock title %}
-
-
-
-{% block content %}
 
 <section class="contactSec">
   <h2> Contact </h2>
@@ -24,6 +18,8 @@
         </address>
     
       <div class="cardSocial">
+<!--         <span class="lightSpan2"></span>
+        <span class="lightSpan"></span> -->
         <ul class="list-social">
           <li><a href=""><i class="fab fa-youtube"></i></a></li>
           <li><a href=""><i class="fab fa-vimeo-v"></i></a></li>
@@ -33,7 +29,8 @@
         </ul>
       </div>
       <div class="contactForm">
-
+<!--         <span class="lightSpan2"></span>
+        <span class="lightSpan"></span> -->
         <h3>Keep in touch</h3>
         <form>
           <input type="text" name="inputName" placeholder="Your Name">
@@ -47,8 +44,9 @@
   </section>
 
 
+  <form>
+    
+  </form>
+
+
 </section>
-
-
-
-{% endblock content %}

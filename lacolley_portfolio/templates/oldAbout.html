@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+
+{% block content %}
+<section class="aboutSec">
+  <section class="about-description">
+    <h4>Description:</h4>
+    <div class="about-presentation">
+      <img src="https://picsum.photos/200/200">
+      <span>
+        <ul class="list-contact">
+          <li> Lacolley Thomas </li>
+          <li>26 years old</li>
+          <li>Junior VFX Compositor</li>
+          <li>thomaslacolley@gmail.com</li>
+        </ul>
+      </span>
+    </div>
+
+      
+      <p class="description">
+        I am a 24 year-old artist. My passion for arts and especially drawing, cinema and video games began early.
+        
+        After a bachelor in Design and applied arts, I started a formation in 3D creation.
+        For 3 years, I learnt the production's pipe line for movie and I improve my knowledge of differents softwares like Maya, Nuke or Photoshop.
+
+        I recently passed my degree of Lead 2D/3D infography whith a VFX composing option after 3 years in the on-line E-Tribart school.
+      
+    </p>
+
+
+  </section >
+  <section class="about-cv">
+
+    <h4>CV:</h4>
+  <ul class="list-cv-vfx">
+    <li><a href="">VFX CV English</a></li>
+    <li><a href="">VFX CV Francais</a></li>
+  </ul>
+
+    <ul class="list-cv-web">
+    <li><a href="">Web CV English</a></li>
+    <li><a href="">Web CV Francais</a></li>
+  </ul>
+    
+  </section>
+  <section class="about-skills">
+  </section>
+
+
+</section>
+
+
+
+
+{% endblock content %}

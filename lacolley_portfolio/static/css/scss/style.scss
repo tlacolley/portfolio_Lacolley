@@ -5,16 +5,16 @@
 @import 'main';
 
 @import 'home';
-
+@import 'portfolio';
 @import 'about';
-@import 'footer';
 @import 'contact';
 
+@import 'footer';
 
 
 
-html,body,.container{
-  // height:100%;
+html,body,{
+  height:100%;
 }
 body{
   margin:0;

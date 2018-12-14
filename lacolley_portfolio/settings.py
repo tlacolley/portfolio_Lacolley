@@ -168,15 +168,18 @@ CMS_TEMPLATES = (
     ## Customize this
     ('home.html', 'Home Template'),
     ('about.html', 'About Template'),
-    ('contact.html', 'Contact Template')
-    # ('contact.html', 'Contact Template')
+    ('contact.html', 'Contact Template'),
+    ('portfolio.html', 'Portfolio Template'),
+    ('onepage.html', 'Onepage Template')
     
 )
 
 CMS_PERMISSION = True
+# from django_cms_tools.plugin_anchor_menu import constants as plugin_anchor_menu_constants
 
-CMS_PLACEHOLDER_CONF = {}
+CMS_PLACEHOLDER_CONF = {
 
+}
 DATABASES = {
     'default': {
         'CONN_MAX_AGE': 0,

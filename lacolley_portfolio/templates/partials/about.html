@@ -1,13 +1,22 @@
-{% extends "base.html" %}
 {% load static cms_tags %}
 
-{% block title %}{% page_attribute "page_title" %}{% endblock title %}
-
-
-{% block content %}
 <section class="aboutSec">
-  <h3> About</h3>
+  <h2> About</h2>
  
+    <section class="about-description">
+      <h4>Description:</h4>
+      <p class="description">
+        I am a 24 year-old artist. My passion for arts and especially drawing, cinema and video games began early.
+      
+        After a bachelor in Design and applied arts, I started a formation in 3D creation.
+        For 3 years, I learnt the production's pipe line for movie and I improve my knowledge of differents softwares like Maya, Nuke or Photoshop.
+
+        I recently passed my degree of Lead 2D/3D infography whith a VFX composing option after 3 years in the on-line E-Tribart school.
+    </p>
+    <span class="bottom-line-description"></span>
+    <span class="left-line-description"></span>
+
+    </section>
     <section class="about-presentation">
       <img src="{% static 'img/profil01.jpg'%}">
       <div class="overlay-img">
@@ -20,18 +29,6 @@
       </div>
     </section>
 
-    <section class="about-description">
-      <h4>Description:</h4>
-      <p class="description">
-        I am a 24 year-old artist. My passion for arts and especially drawing, cinema and video games began early.
-      
-        After a bachelor in Design and applied arts, I started a formation in 3D creation.
-        For 3 years, I learnt the production's pipe line for movie and I improve my knowledge of differents softwares like Maya, Nuke or Photoshop.
-
-        I recently passed my degree of Lead 2D/3D infography whith a VFX composing option after 3 years in the on-line E-Tribart school.
-      
-    </p>
-    </section>
 
   <section class="about-cv">
     <h4>Resume:</h4>
@@ -54,7 +51,8 @@
         <li><img src="{% static 'img/v-ray-icon.png'%}"><p> <strong>V-ray:</strong>  Tracking, Camera solving, Object solving,.</p></li>
         <li><img src="{% static 'img/pfTrack-logo.png'%}"> <p><strong>PF Track:</strong>  Tracking, Camera solving, Object solving,...</p></li>
       </ul>
-
+    <span class="separator-skills"></span>
+      
       <ul class="list-skills list-vfx-right">
         <li><img src="{% static 'img/psd-logo.png'%}"> <p><strong>Photoshop:</strong> 2D compositing, Photo manipulation,Matte painting,...</p></li>
         <li><img src="{% static 'img/substance-logo.png'%}"> <p><strong>Substance Painter:</strong> 2D compositing, Photo manipulation,Matte painting,...</p></li>
@@ -81,8 +79,3 @@
 
 
 </section>
-
-
-
-
-{% endblock content %}

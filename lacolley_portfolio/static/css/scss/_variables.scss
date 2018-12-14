@@ -1,11 +1,18 @@
 // Variable Color:
-$primaryColor: #0A090B;
+$primaryColor: #004bea;
 $secondaryColor: black;
 $primaryTextColor: white;
-
+$glowBtn: rgba(0,214,252,1);
 // Variable Texte:
 
+// $boxShadowGlow: 0px 0px 20px 1px #004bea, 
+//       inset 0 0  20px #004bea;
 
+@mixin boxShadowGlow($size,$color){
+box-shadow:
+      0px 0px $size 1px $color, 
+      inset 0 0 $size  $color;
+}
 // Margin paddin contain:
 
 $padding:0 10%;

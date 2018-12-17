@@ -1,12 +1,112 @@
 .portfolioSec{
-  color: white;
+    color: white;
 
+.container-portfolio{
+    .panel-heading{
+        position: relative;
+        .top-tabs{
+            position: absolute;
+            width: 100%;
+            top: -48px;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            li{
+                list-style:none;
+                float:left;
+                width:50%;
+                a{
+                    display: flex;
+                    justify-content: center;
+                    line-height: 385%;
+                    position:relative;
+                    color:black;
+                    text-align:center;
+                    text-decoration:none;
+                    text-transform:uppercase;
+                    height:3rem;
+                    // line-height:90px;
+                    // background:linear-gradient(165deg,transparent 29%, #98927C 30%);
+                    background: linear-gradient(to bottom, #ECECEC 50%, #D1D1D1 100%);
+                    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 #FFF;
+                    border-top-left-radius: 25px;
+                    border-top-right-radius: 25px;
+                    &:hover{
+                        background: #F2EEE2;
+                        color:#98927C;
+                    }
+                }
+            }
+            .active a{
+                background:grey;
+            }
+             li:nth-child(1) a{
+                }
+        }
+    }
+    .panel-body{
+        background-color:grey;
+        width:100%;
+        height: 40rem;
+    }
+    .tab-content{
+        height:100%;
+    }
+    #vfxTab{
+        height:100%;
+        position:relative;
+        .panelVfx-heading{
+            position:absolute;
+            height:100%;
+            width:100%;
 
+            ul{
+            display:flex;
+            flex-direction:column;
+            height:100%;
+            width:100%;
+            position:absolute;
+            right: 3%;
+                li{
+                    width:3%;
+                    height: 25%;
+                    background: linear-gradient(to bottom, #ECECEC 50%, #D1D1D1 100%);
+                    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 #FFF;
+                    writing-mode: sideways-lr;
+                    border-top-left-radius: 25px;
+                    border-bottom-left-radius: 25px;
+                  
+                    a{
+                        display:block;
+                        width:100%;
+                        color:black;
+                       
+                        &:hover{
+                            border-top-left-radius: 25px;
+                            border-bottom-left-radius: 25px;
+                            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4), inset 0 1px 0 #FFF;
 
+                            background: #F2EEE2;
+                            color:#98927C;
+                        }
+                    }
+                }
+            }
+        }
 
-
+    }
 
 
 
 
 }
+
+}
+
+@mixin transition ($prop, $time) {
+    // -webit-transition: $prop $time $easing;
+    transition: $prop $time cubic-bezier(.11, .65, .04, 1);;
+}
+
